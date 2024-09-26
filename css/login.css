@@ -1,0 +1,97 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #00adb5, #008c9e);
+    text-transform: uppercase;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.login {
+    background-color: rgba(0, 0, 0, 0.5); /* Transparansi 50% */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login h4 {
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+form .form-group input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+form .form-group input:focus {
+    border-color: #00adb5;
+    box-shadow: 0 0 8px rgba(0, 173, 181, 0.8);
+    outline: none;
+}
+
+.btn-group .btn-check:checked + .btn {
+    background-color: #00adb5;
+    border-color: #00adb5;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #00adb5;
+    border: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    background-color: #008c9e;
+}
+
+.btn-danger {
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-danger:hover {
+    background-color: #e43f3f;
+}
+
+a {
+    text-decoration: none;
+    color: #ff4d4d;
+    margin-top: 15px;
+    display: block;
+}
+
+a:hover {
+    color: #e43f3f;
+}
+
+@media (max-width: 768px) {
+    .login {
+        padding: 20px;
+        width: 90%;
+    }
+}
